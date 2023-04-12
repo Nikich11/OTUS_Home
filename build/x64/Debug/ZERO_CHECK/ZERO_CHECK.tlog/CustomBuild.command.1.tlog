@@ -1,0 +1,10 @@
+^C:\USERS\89170\PROJECT FENIX\BUILD\CMAKEFILES\21D454B25F4132AAF64ABF774746ACEC\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/89170/Project fenix" "-BC:/Users/89170/Project fenix/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/89170/Project fenix/build/01.hello_world.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
